@@ -1,13 +1,16 @@
 import { useState } from "react";
 import "./App.css";
+import CardsContainer from "./components/CardsContainer";
+import Sidebar from "./components/Sidebar";
+
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [time, setTime] = useState('Weekly')
   return (
     <>
-      <div>
-        <h1>heyyyyy</h1>
+      <div className="main">
+        <Sidebar />
+        <CardsContainer time={time}/>
       </div>
     </>
   );

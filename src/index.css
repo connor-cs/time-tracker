@@ -12,3 +12,56 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid white;
+  border-radius: 10px;
+  min-width: 200px
+}
+
+.card-content {
+  background-color: #1d204b;
+  height: 60%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1vw;
+  margin-left: 1.5rem;
+}
+
+.duration > p {
+  cursor: pointer;
+  color: hsl(235, 45%, 61%);
+}
+.duration > p:hover{
+  cursor: pointer;
+  color: white;
+}
+
+.duration > .active {
+  color: white;
+}
+
+.profile {
+  background-color: #5746ea;
+  border-radius: 10px;
+}
+
+.duration {
+  background-color: #1d204b;
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+
+}
